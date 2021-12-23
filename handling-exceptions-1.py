@@ -24,7 +24,7 @@ class PoemFiles:
 #   print(file.uppercasewords())
 
 # Second
-# with PoemFiles('poem.txt', 'r') as file2:
-#   print(file2.read())
-#   print("---- Exception data below ----")
+with PoemFiles('poem.txt', 'r') as file2:
+  print(file2.read())
+  print("---- Exception data below ----")
 
