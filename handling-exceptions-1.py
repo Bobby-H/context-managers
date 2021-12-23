@@ -15,6 +15,8 @@ class PoemFiles:
     print(exc_type)
     print(exc_value)
     print(traceback)
+    # Checkpoint #2
+    self.opened_poem_file.close()
 
 # First
 # with PoemFiles('poem.txt', 'r') as file:
