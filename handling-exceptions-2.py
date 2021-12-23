@@ -12,7 +12,10 @@ class PoemFiles:
 
   def __exit__(self, exc_type, exc_value, traceback):
     print(exc_type, exc_value, traceback, '\n')
-    # Write your code below: 
+    # Checkpoint #2
+    if isinstance(exc_value, AttributeError):
+      self.opened_poem_file.close()
+      return True
     
 
 with PoemFiles('poem.txt', 'r') as file:
