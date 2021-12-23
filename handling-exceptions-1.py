@@ -10,7 +10,11 @@ class PoemFiles:
     self.opened_poem_file = open(self.file, self.mode)
     return self.opened_poem_file
 
-  # Create your __exit__ method here:
+# Checkpoint #1
+  def __exit__(self, exc_type, exc_value, traceback):
+    print(exc_type)
+    print(exc_value)
+    print(traceback)
 
 # First
 # with PoemFiles('poem.txt', 'r') as file:
