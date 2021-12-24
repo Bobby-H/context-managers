@@ -21,4 +21,9 @@ def card_files(file, mode):
     print('Closing File')
     open_card_file.close()
 
-# Write your code below: 
+# Checkpoint #1
+with poem_files('poem.txt', 'r') as poem:
+  print(poem)
+  with card_files('card.txt', 'w') as card:
+    print(card)
+    card.write(poem.read())
